@@ -30,7 +30,7 @@ struct ReportListView: View {
                         report.isReported.toggle()
                     } label: {
                         Image(systemName: report.isReported ? "checkmark.square.fill" :"checkmark.square")
-                            .foregroundColor(.blue)
+                            .foregroundColor(Color(red: 235/255, green: 86/255, blue: 64/255))
                     }
                 }
                 
