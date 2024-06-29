@@ -9,14 +9,21 @@ import SwiftUI
 
 @main
 struct RoadkillApp: App {
+    let locationManager: LocationManager
     let recordManager: AudioRecordManager
     
     init() {
-        let manager = AudioRecordManager()
+        // 녹음
+        let recordManager = AudioRecordManager()
         Task {
-            await manager.setupAudioSession()
+            await recordManager.setupAudioSession()
         }
-        self.recordManager = manager
+        self.recordManager = recordManager
+        
+        // 위치
+        let locationManager = LocationManager()
+        locationManager.setupLocation()
+        self.locationManager = locationManager
     }
     
     var body: some Scene {
@@ -24,5 +31,6 @@ struct RoadkillApp: App {
             ContentView()
         }
         .environment(recordManager)
+        .environment(locationManager)
     }
 }
