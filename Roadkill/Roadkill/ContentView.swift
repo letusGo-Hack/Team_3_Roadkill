@@ -29,6 +29,7 @@ struct ContentView: View {
             }
         }
         .padding()
+        .accentColor(Color(red: 235/255, green: 86/255, blue: 64/255))
     }
 }
 

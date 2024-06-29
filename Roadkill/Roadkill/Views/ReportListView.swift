@@ -27,7 +27,7 @@ struct ReportListView: View {
                         .font(.headline)
                     Spacer()
                     Image(systemName: report.isReported ? "checkmark.square.fill" :"checkmark.square")
-                        .foregroundColor(.blue)
+                        .foregroundColor(Color(red: 235/255, green: 86/255, blue: 64/255))
                 }
                 
                 Text("장소: \(report.location)")
