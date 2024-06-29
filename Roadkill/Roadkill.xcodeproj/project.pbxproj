@@ -10,7 +10,7 @@
 		F486267E2C2FCAC900E233D3 /* ShortcutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486267D2C2FCAC900E233D3 /* ShortcutsProvider.swift */; };
 		F48626812C2FCB0B00E233D3 /* AssetIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48626802C2FCB0A00E233D3 /* AssetIntents.swift */; };
 		F48626842C2FD2F800E233D3 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48626832C2FD2F400E233D3 /* LocationManager.swift */; };
-		F48626862C2FD32000E233D3 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48626852C2FD31D00E233D3 /* AudioManager.swift */; };
+		F48626862C2FD32000E233D3 /* AudioRecordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48626852C2FD31D00E233D3 /* AudioRecordManager.swift */; };
 		FD38CE1C2C2FBA0A0056344A /* RoadkillApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38CE1B2C2FBA0A0056344A /* RoadkillApp.swift */; };
 		FD38CE1E2C2FBA0A0056344A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38CE1D2C2FBA0A0056344A /* ContentView.swift */; };
 		FD38CE202C2FBA0B0056344A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD38CE1F2C2FBA0B0056344A /* Assets.xcassets */; };
@@ -22,7 +22,7 @@
 		F486267D2C2FCAC900E233D3 /* ShortcutsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsProvider.swift; sourceTree = "<group>"; };
 		F48626802C2FCB0A00E233D3 /* AssetIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetIntents.swift; sourceTree = "<group>"; };
 		F48626832C2FD2F400E233D3 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		F48626852C2FD31D00E233D3 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		F48626852C2FD31D00E233D3 /* AudioRecordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordManager.swift; sourceTree = "<group>"; };
 		FD38CE182C2FBA0A0056344A /* Roadkill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roadkill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD38CE1B2C2FBA0A0056344A /* RoadkillApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadkillApp.swift; sourceTree = "<group>"; };
 		FD38CE1D2C2FBA0A0056344A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		F48626822C2FD2ED00E233D3 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				F48626852C2FD31D00E233D3 /* AudioManager.swift */,
+				F48626852C2FD31D00E233D3 /* AudioRecordManager.swift */,
 				F48626832C2FD2F400E233D3 /* LocationManager.swift */,
 			);
 			path = Manager;
@@ -179,7 +179,7 @@
 				F486267E2C2FCAC900E233D3 /* ShortcutsProvider.swift in Sources */,
 				F48626812C2FCB0B00E233D3 /* AssetIntents.swift in Sources */,
 				FD38CE1C2C2FBA0A0056344A /* RoadkillApp.swift in Sources */,
-				F48626862C2FD32000E233D3 /* AudioManager.swift in Sources */,
+				F48626862C2FD32000E233D3 /* AudioRecordManager.swift in Sources */,
 				F48626842C2FD2F800E233D3 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

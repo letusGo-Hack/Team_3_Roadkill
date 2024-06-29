@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(AudioRecordManager.self) private var recordManager
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")

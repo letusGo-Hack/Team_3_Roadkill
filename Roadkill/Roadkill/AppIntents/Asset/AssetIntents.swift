@@ -26,7 +26,7 @@ import AppIntents
 
 struct RecordAssetIntent: AudioRecordingIntent {
     static var title: LocalizedStringResource = "로드킬 신고하기"
-//    static let searchScopes: [StringSearchScope] = [.general]
+    static let searchScopes: [StringSearchScope] = [.general]
 //    static let searchScopes: [StringSearchScope] = [.general]
     
 //    var criteria: StringSearchCriteria
