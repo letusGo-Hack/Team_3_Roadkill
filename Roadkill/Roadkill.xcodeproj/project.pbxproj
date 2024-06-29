@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F486267B2C2FC8AE00E233D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FD38CE182C2FBA0A0056344A /* Roadkill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roadkill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD38CE1B2C2FBA0A0056344A /* RoadkillApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadkillApp.swift; sourceTree = "<group>"; };
 		FD38CE1D2C2FBA0A0056344A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		FD38CE1A2C2FBA0A0056344A /* Roadkill */ = {
 			isa = PBXGroup;
 			children = (
+				F486267B2C2FC8AE00E233D3 /* Info.plist */,
 				FD38CE1B2C2FBA0A0056344A /* RoadkillApp.swift */,
 				FD38CE1D2C2FBA0A0056344A /* ContentView.swift */,
 				FD38CE1F2C2FBA0B0056344A /* Assets.xcassets */,
@@ -274,6 +276,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Roadkill/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Roadkill/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치 접근을 허용해주세요.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "마이크 접근을 허용해주세요.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +307,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Roadkill/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Roadkill/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치 접근을 허용해주세요.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "마이크 접근을 허용해주세요.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
