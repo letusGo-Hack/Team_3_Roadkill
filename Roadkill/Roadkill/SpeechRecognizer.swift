@@ -22,9 +22,9 @@ final class SpeechRecognizer {
     private let recognizer: SFSpeechRecognizer?
     weak var delegate: SpeechRecognizerDelegate?
 
-    init() throws {
+    init() throws(RecognizerError) {
         guard let recognizer = SFSpeechRecognizer() else {
-            throw RecognizerError.nilRecognizer
+            throw .nilRecognizer
         }
         self.recognizer = recognizer
     }
