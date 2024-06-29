@@ -6,9 +6,11 @@
 //
 
 import SwiftData
+import Foundation
 
 @Model
 final class Report: Hashable {
+    var id: UUID = UUID()
     var date: String
     var location: String
     var text: String

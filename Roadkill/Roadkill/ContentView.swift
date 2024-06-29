@@ -12,6 +12,7 @@ struct ContentView: View {
     
     @Environment(LocationManager.self) private var locationManager
     @Environment(AudioRecordManager.self) private var recordManager
+    @Environment(\.modelContext) var modelContext
     
     var body: some View {
         @Bindable var navigation = navigation

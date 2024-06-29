@@ -7,6 +7,7 @@
 
 import AppIntents
 import SwiftUI
+import SwiftData
 
 @main
 struct RoadkillApp: App {
@@ -14,6 +15,17 @@ struct RoadkillApp: App {
     
     let locationManager: LocationManager
     let recordManager: AudioRecordManager
+    
+    var modelContainer: ModelContainer = {
+        let schema = Schema([Report.self])
+        let modelConfiguration = ModelConfiguration(schema: schema)
+        
+        do {
+            return try ModelContainer(for: schema, configurations: [modelConfiguration])
+        } catch {
+            fatalError("Could not create ModelContainer: \(error)")
+        }
+    }()
     
     init() {
         let navigationManager = NavigationManager()
