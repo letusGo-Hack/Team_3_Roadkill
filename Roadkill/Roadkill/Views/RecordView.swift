@@ -9,6 +9,7 @@ import SwiftUI
 import Lottie
 
 struct RecordView: View {
+    @Environment(LocationManager.self) private var locationManager
     @Environment(AudioRecordManager.self) private var recordManager
     
     var recordingLottie = LottieView(animation: .named("recording"))
@@ -19,20 +20,28 @@ struct RecordView: View {
                 recordingLottie
                     .playing(loopMode: .loop)
                     .onTapGesture {
-                        recordManager.isRecording.toggle()
+                        let startDate = recordManager.startDate
+                        let startLocation = recordManager.startLocation
+                        
+                        recordManager.stopRecording()
+                        
+                        // 음성 파일 -> Text
+                        // SwiftData Save
                     }
             } else {
                 recordingLottie
                     .playbackMode(.paused)
                     .onTapGesture {
-                        recordManager.isRecording.toggle()
+                        recordManager.startRecording(Date())
                     }
             }
             Text(recordManager.isRecording ? "녹음 중입니다..." : "")
                 .foregroundColor(.black)
         }
         .padding(.bottom, 20)
-        
+        .onChange(of: locationManager.currentLocation) { oldValue, newValue in
+            recordManager.startLocation = newValue
+        }
     }
 }
 

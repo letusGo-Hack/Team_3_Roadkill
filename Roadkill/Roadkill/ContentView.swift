@@ -22,7 +22,9 @@ struct ContentView: View {
                 IntroductionView()
             }
             Tab("녹음하기", systemImage: "waveform.circle.fill", value: .record) {
-                RecordView().environment(recordManager)
+                RecordView()
+                    .environment(recordManager)
+                    .environment(locationManager)
             }
             Tab("신고 내역", systemImage: "list.bullet", value: .reportList) {
                 ReportListView()

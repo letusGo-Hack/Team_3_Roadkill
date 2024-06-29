@@ -6,6 +6,7 @@
 //
 
 import AVFoundation
+import CoreLocation
 
 @Observable
 final class AudioRecordManager {
@@ -13,6 +14,9 @@ final class AudioRecordManager {
 
     var audioRecorder: AVAudioRecorder?
     var audioPlayer: AVAudioPlayer?
+    
+    var startDate: Date?
+    var startLocation: CLLocation?
     
     var isRecording: Bool = false
     var isPlaying: Bool = false
@@ -43,7 +47,7 @@ final class AudioRecordManager {
         }
     }
     
-    func startRecording() {
+    func startRecording(_ date: Date) {
         let audioFilename = audioFilePath
         let settings = [
             AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
@@ -54,6 +58,7 @@ final class AudioRecordManager {
         
         do {
             isRecording = true
+            startDate = date
             
             try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playAndRecord)
             try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSession.PortOverride.speaker)
@@ -70,6 +75,7 @@ final class AudioRecordManager {
         audioRecorder = nil
         
         isRecording = false
+        startDate = nil
     }
 }
 
