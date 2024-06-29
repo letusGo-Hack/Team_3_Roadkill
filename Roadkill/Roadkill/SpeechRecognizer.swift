@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import AVFoundation
 import Speech
 
 actor SpeechRecognizer {
@@ -23,29 +22,6 @@ actor SpeechRecognizer {
             throw RecognizerError.nilRecognizer
         }
         self.recognizer = recognizer
-
-//        do {
-//            try self.requestAuthorization()
-//        } catch {
-//            throw error
-//        }
-    }
-
-    nonisolated func requestAuthorization() throws {
-        SFSpeechRecognizer.requestAuthorization { authStatus in
-            switch authStatus {
-            case .notDetermined:
-                print("not determined")
-            case .denied:
-                print("Denied")
-            case .restricted:
-                print("Restricted")
-            case .authorized:
-                print("Authorized")
-            @unknown default:
-                fatalError()
-            }
-        }
     }
 
     func recognizeFile(url: URL) throws(RecognizerError) {
