@@ -63,6 +63,7 @@
 		F48626822C2FD2ED00E233D3 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				FD38CE292C2FC8330056344A /* SpeechRecognizer.swift */,
 				F48626852C2FD31D00E233D3 /* AudioRecordManager.swift */,
 				F48626832C2FD2F400E233D3 /* LocationManager.swift */,
 			);
@@ -95,7 +96,6 @@
 				FD38CE1D2C2FBA0A0056344A /* ContentView.swift */,
 				FD38CE1F2C2FBA0B0056344A /* Assets.xcassets */,
 				FD38CE212C2FBA0B0056344A /* Preview Content */,
-				FD38CE292C2FC8330056344A /* SpeechRecognizer.swift */,
 			);
 			path = Roadkill;
 			sourceTree = "<group>";
