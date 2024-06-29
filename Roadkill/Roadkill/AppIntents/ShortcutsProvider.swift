@@ -7,7 +7,7 @@
 
 import AppIntents
 
-struct ExampleAppShortcutsProvider: AppShortcutsProvider {
+struct RoadkillAppShortcutsProvider: AppShortcutsProvider {
     static var appShortcuts: [AppShortcut] {
         AppShortcut(
             intent: RecordAssetIntent(),
@@ -17,6 +17,14 @@ struct ExampleAppShortcutsProvider: AppShortcutsProvider {
             shortTitle: "Report",
             systemImageName: "exclamationmark.bubble"
         )
+//        AppShortcut(
+//            intent: OrderSoupIntent(),
+//            phrases: [
+//                "2Report \(.applicationName)"
+//            ],
+//            shortTitle: "Report",
+//            systemImageName: "exclamationmark.bubble"
+//        )
     }
     
 }

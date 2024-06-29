@@ -14,6 +14,7 @@ enum Selection: Int {
 }
 
 struct ContentView: View {
+    @Environment(LocationManager.self) private var locationManager
     @Environment(AudioRecordManager.self) private var recordManager
     
     @State var navigation: Selection = .record
