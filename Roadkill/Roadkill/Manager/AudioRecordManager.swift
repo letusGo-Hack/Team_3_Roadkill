@@ -65,7 +65,7 @@ final class AudioRecordManager {
         }
     }
     
-    func stopRecording(finish: Bool) {
+    func stopRecording(finish: Bool = true) {
         audioRecorder?.stop()
         audioRecorder = nil
         

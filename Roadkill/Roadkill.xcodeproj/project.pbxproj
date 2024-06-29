@@ -11,6 +11,7 @@
 		C478C5162C2FED36003E91D2 /* ReportListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C478C5132C2FED36003E91D2 /* ReportListView.swift */; };
 		C478C5172C2FED36003E91D2 /* IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C478C5112C2FED36003E91D2 /* IntroductionView.swift */; };
 		C478C51A2C2FED54003E91D2 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = C478C5182C2FED54003E91D2 /* Report.swift */; };
+		F402E81F2C2FFDE600B9383A /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F402E81E2C2FFDE100B9383A /* NavigationManager.swift */; };
 		C478C51D2C2FFCE2003E91D2 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C478C51C2C2FFCE2003E91D2 /* Lottie */; };
 		C478C5222C300403003E91D2 /* recording.json in Resources */ = {isa = PBXBuildFile; fileRef = C478C5212C300403003E91D2 /* recording.json */; };
 		F486267E2C2FCAC900E233D3 /* ShortcutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486267D2C2FCAC900E233D3 /* ShortcutsProvider.swift */; };
@@ -29,6 +30,7 @@
 		C478C5122C2FED36003E91D2 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
 		C478C5132C2FED36003E91D2 /* ReportListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportListView.swift; sourceTree = "<group>"; };
 		C478C5182C2FED54003E91D2 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		F402E81E2C2FFDE100B9383A /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 		C478C5212C300403003E91D2 /* recording.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = recording.json; sourceTree = "<group>"; };
 		F486267B2C2FC8AE00E233D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F486267D2C2FCAC900E233D3 /* ShortcutsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsProvider.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		F48626822C2FD2ED00E233D3 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				F402E81E2C2FFDE100B9383A /* NavigationManager.swift */,
 				FD38CE292C2FC8330056344A /* SpeechRecognizer.swift */,
 				F48626852C2FD31D00E233D3 /* AudioRecordManager.swift */,
 				F48626832C2FD2F400E233D3 /* LocationManager.swift */,
@@ -231,6 +234,7 @@
 				F486267E2C2FCAC900E233D3 /* ShortcutsProvider.swift in Sources */,
 				F48626812C2FCB0B00E233D3 /* AssetIntents.swift in Sources */,
 				FD38CE1C2C2FBA0A0056344A /* RoadkillApp.swift in Sources */,
+				F402E81F2C2FFDE600B9383A /* NavigationManager.swift in Sources */,
 				F48626862C2FD32000E233D3 /* AudioRecordManager.swift in Sources */,
 				C478C5152C2FED36003E91D2 /* RecordView.swift in Sources */,
 				C478C5162C2FED36003E91D2 /* ReportListView.swift in Sources */,

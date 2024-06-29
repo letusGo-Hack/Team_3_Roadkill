@@ -7,20 +7,15 @@
 
 import SwiftUI
 
-enum Selection: Int {
-    case intro
-    case record
-    case reportList
-}
-
 struct ContentView: View {
+    @Environment(NavigationManager.self) private var navigation
+    
+    @Environment(LocationManager.self) private var locationManager
     @Environment(AudioRecordManager.self) private var recordManager
     
-    @State var navigation: Selection = .record
-    
     var body: some View {
-
-        TabView(selection: $navigation) {
+        @Bindable var navigation = navigation
+        TabView(selection: $navigation.selection) {
             Tab("매뉴얼", systemImage: "info.circle", value: .intro) {
                 IntroductionView()
             }
