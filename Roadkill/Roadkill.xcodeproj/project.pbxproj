@@ -15,6 +15,7 @@
 		FD38CE1E2C2FBA0A0056344A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38CE1D2C2FBA0A0056344A /* ContentView.swift */; };
 		FD38CE202C2FBA0B0056344A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD38CE1F2C2FBA0B0056344A /* Assets.xcassets */; };
 		FD38CE232C2FBA0B0056344A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD38CE222C2FBA0B0056344A /* Preview Assets.xcassets */; };
+		FD38CE2A2C2FC8330056344A /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38CE292C2FC8330056344A /* SpeechRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FD38CE1D2C2FBA0A0056344A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FD38CE1F2C2FBA0B0056344A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD38CE222C2FBA0B0056344A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD38CE292C2FC8330056344A /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				FD38CE1D2C2FBA0A0056344A /* ContentView.swift */,
 				FD38CE1F2C2FBA0B0056344A /* Assets.xcassets */,
 				FD38CE212C2FBA0B0056344A /* Preview Content */,
+				FD38CE292C2FC8330056344A /* SpeechRecognizer.swift */,
 			);
 			path = Roadkill;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				FD38CE1C2C2FBA0A0056344A /* RoadkillApp.swift in Sources */,
 				F48626862C2FD32000E233D3 /* AudioRecordManager.swift in Sources */,
 				F48626842C2FD2F800E233D3 /* LocationManager.swift in Sources */,
+				FD38CE2A2C2FC8330056344A /* SpeechRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
