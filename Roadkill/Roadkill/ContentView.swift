@@ -7,15 +7,29 @@
 
 import SwiftUI
 
+enum Selection: Int {
+    case intro
+    case record
+    case reportList
+}
+
 struct ContentView: View {
     @Environment(AudioRecordManager.self) private var recordManager
     
+    @State var navigation: Selection = .record
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+
+        TabView(selection: $navigation) {
+            Tab("매뉴얼", systemImage: "info.circle", value: .intro) {
+                IntroductionView()
+            }
+            Tab("녹음하기", systemImage: "waveform.circle.fill", value: .record) {
+                RecordView()
+            }
+            Tab("신고 내역", systemImage: "list.bullet", value: .reportList) {
+                ReportListView()
+            }
         }
         .padding()
     }

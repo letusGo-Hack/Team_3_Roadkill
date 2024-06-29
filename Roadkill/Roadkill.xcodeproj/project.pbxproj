@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C478C5152C2FED36003E91D2 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C478C5122C2FED36003E91D2 /* RecordView.swift */; };
+		C478C5162C2FED36003E91D2 /* ReportListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C478C5132C2FED36003E91D2 /* ReportListView.swift */; };
+		C478C5172C2FED36003E91D2 /* IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C478C5112C2FED36003E91D2 /* IntroductionView.swift */; };
+		C478C51A2C2FED54003E91D2 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = C478C5182C2FED54003E91D2 /* Report.swift */; };
 		F486267E2C2FCAC900E233D3 /* ShortcutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486267D2C2FCAC900E233D3 /* ShortcutsProvider.swift */; };
 		F48626812C2FCB0B00E233D3 /* AssetIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48626802C2FCB0A00E233D3 /* AssetIntents.swift */; };
 		F48626842C2FD2F800E233D3 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48626832C2FD2F400E233D3 /* LocationManager.swift */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C478C5112C2FED36003E91D2 /* IntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionView.swift; sourceTree = "<group>"; };
+		C478C5122C2FED36003E91D2 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
+		C478C5132C2FED36003E91D2 /* ReportListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportListView.swift; sourceTree = "<group>"; };
+		C478C5182C2FED54003E91D2 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
 		F486267B2C2FC8AE00E233D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F486267D2C2FCAC900E233D3 /* ShortcutsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsProvider.swift; sourceTree = "<group>"; };
 		F48626802C2FCB0A00E233D3 /* AssetIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetIntents.swift; sourceTree = "<group>"; };
@@ -43,6 +51,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C478C5142C2FED36003E91D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C478C5112C2FED36003E91D2 /* IntroductionView.swift */,
+				C478C5122C2FED36003E91D2 /* RecordView.swift */,
+				C478C5132C2FED36003E91D2 /* ReportListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C478C5192C2FED54003E91D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C478C5182C2FED54003E91D2 /* Report.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F486267C2C2FCAA200E233D3 /* AppIntents */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +115,8 @@
 		FD38CE1A2C2FBA0A0056344A /* Roadkill */ = {
 			isa = PBXGroup;
 			children = (
+				C478C5192C2FED54003E91D2 /* Model */,
+				C478C5142C2FED36003E91D2 /* Views */,
 				F48626822C2FD2ED00E233D3 /* Manager */,
 				F486267C2C2FCAA200E233D3 /* AppIntents */,
 				F486267B2C2FC8AE00E233D3 /* Info.plist */,
@@ -178,11 +206,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C478C51A2C2FED54003E91D2 /* Report.swift in Sources */,
 				FD38CE1E2C2FBA0A0056344A /* ContentView.swift in Sources */,
 				F486267E2C2FCAC900E233D3 /* ShortcutsProvider.swift in Sources */,
 				F48626812C2FCB0B00E233D3 /* AssetIntents.swift in Sources */,
 				FD38CE1C2C2FBA0A0056344A /* RoadkillApp.swift in Sources */,
 				F48626862C2FD32000E233D3 /* AudioRecordManager.swift in Sources */,
+				C478C5152C2FED36003E91D2 /* RecordView.swift in Sources */,
+				C478C5162C2FED36003E91D2 /* ReportListView.swift in Sources */,
+				C478C5172C2FED36003E91D2 /* IntroductionView.swift in Sources */,
 				F48626842C2FD2F800E233D3 /* LocationManager.swift in Sources */,
 				FD38CE2A2C2FC8330056344A /* SpeechRecognizer.swift in Sources */,
 			);
