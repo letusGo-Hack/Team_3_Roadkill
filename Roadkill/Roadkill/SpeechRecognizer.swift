@@ -17,6 +17,7 @@ final class SpeechRecognizer {
     enum RecognizerError: Error {
         case nilRecognizer
         case recognizerUnavailable
+        case recognitionFailure
     }
 
     private let recognizer: SFSpeechRecognizer?
@@ -29,32 +30,29 @@ final class SpeechRecognizer {
         self.recognizer = recognizer
     }
 
-    func recognizeFile(url: URL) throws(RecognizerError) {
+    func recognizeFile(url: URL) async throws -> String {
         guard let recognizer = SFSpeechRecognizer() else {
-            throw .nilRecognizer
+            throw RecognizerError.nilRecognizer
         }
 
         guard recognizer.isAvailable else {
-            throw .recognizerUnavailable
+            throw RecognizerError.recognizerUnavailable
         }
 
         // Create and execute a speech recognition request for the audio file at the URL.
         let request = SFSpeechURLRecognitionRequest(url: url)
-        recognizer.recognitionTask(with: request) { [weak self] (result, error) in
-            self?.handleRecognition(result: result, error: error)
-        }
-    }
 
-    private func handleRecognition(result: SFSpeechRecognitionResult?, error: Error?) {
-        guard let result else {
-            // Recognition failed, so check the error for details and handle it.
-            return
-        }
+        return await withCheckedContinuation { continuation in
+            recognizer.recognitionTask(with: request) { (result, error) in
+                guard let result else {
+                    // Recognition failed, so check the error for details and handle it.
+                    return
+                }
 
-        // Print the speech transcription with the highest confidence that the
-        // system recognized.
-        if result.isFinal {
-            delegate?.speechRecognizer(self, didFinishTranscript: result.bestTranscription.formattedString)
+                if result.isFinal {
+                    continuation.resume(returning: result.bestTranscription.formattedString)
+                }
+            }
         }
     }
 
