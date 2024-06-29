@@ -14,7 +14,12 @@ final class AudioRecordManager {
     
     var isRecording: Bool = false
     var isPlaying: Bool = false
-    
+
+    var documentsDirectory: URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
+
     func setupAudioSession() async {
         let audioSession = AVAudioSession.sharedInstance()
         do {
@@ -33,7 +38,7 @@ final class AudioRecordManager {
     }
     
     func startRecording() {
-        let audioFilename = getDocumentsDirectory().appendingPathComponent("recording.m4a")
+        let audioFilename = documentsDirectory.appendingPathComponent("recording.m4a")
         let settings = [
             AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
             AVSampleRateKey: 12000,
@@ -60,16 +65,11 @@ final class AudioRecordManager {
         
         isRecording = false
     }
-    
-    private func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0]
-    }
 }
 
 extension AudioRecordManager {
     func playRecording() {
-        let audioFilename = getDocumentsDirectory().appendingPathComponent("recording.m4a")
+        let audioFilename = documentsDirectory.appendingPathComponent("recording.m4a")
         do {
             isPlaying = true
             
