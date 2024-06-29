@@ -10,7 +10,7 @@ import AppIntents
 struct RoadkillAppShortcutsProvider: AppShortcutsProvider {
     static var appShortcuts: [AppShortcut] {
         AppShortcut(
-            intent: RecordAssetIntent(),
+            intent: StartRecordIntent(),
             phrases: [
                 "Report \(.applicationName)"
             ],

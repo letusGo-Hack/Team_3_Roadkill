@@ -8,6 +8,24 @@
 import AppIntents
 import AVFAudio
 
+struct StartRecordIntent: AppIntent {
+    static var title: LocalizedStringResource = "OpenIntent"
+    static let openAppWhenRun = true
+    
+    @Dependency
+    var navigation: NavigationManager
+    
+    @Dependency
+    var recordManager: AudioRecordManager
+
+    @MainActor
+    func perform() async throws -> some IntentResult {
+        navigation.startRecord()
+        recordManager.startRecording()
+        return .result()
+    }
+}
+
 //struct OrderSoupIntent: AppIntent {
 //    static var title: LocalizedStringResource = "OrderSoupIntent"
 //
