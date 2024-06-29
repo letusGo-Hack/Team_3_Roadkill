@@ -24,7 +24,8 @@ struct StartRecordIntent: AudioRecordingIntent {
     @MainActor
     func perform() async throws -> some IntentResult {
         navigation.startRecord()
-        recordManager.startRecording()
+        locationManager.requestLocation()
+        recordManager.startRecording(Date())
         return .result()
     }
 }

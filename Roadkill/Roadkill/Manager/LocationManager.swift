@@ -13,7 +13,7 @@ final class LocationManager: NSObject {
     
     private let locationManager = CLLocationManager()
     private let geocoder = CLGeocoder()
-    private var currentLocation: CLLocation?
+    var currentLocation: CLLocation?
     private var currentTask: Task<CLPlacemark, Error>?
     
     override init() {
@@ -35,7 +35,7 @@ final class LocationManager: NSObject {
         locationManager.requestLocation()
     }
     
-    private func lookUp(_ location: CLLocation) async throws -> CLPlacemark {
+    func lookUp(_ location: CLLocation) async throws -> CLPlacemark {
         
         currentTask = Task { [currentTask] in
             // Await any previous processing.
