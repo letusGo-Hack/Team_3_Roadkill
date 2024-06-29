@@ -8,10 +8,6 @@
 import Foundation
 import Speech
 
-protocol SpeechRecognizerDelegate: AnyObject {
-    func speechRecognizer(_ recognizer: SpeechRecognizer, didFinishTranscript script: String)
-}
-
 final class SpeechRecognizer {
 
     enum RecognizerError: Error {
@@ -21,7 +17,6 @@ final class SpeechRecognizer {
     }
 
     private let recognizer: SFSpeechRecognizer?
-    weak var delegate: SpeechRecognizerDelegate?
 
     init() throws(RecognizerError) {
         guard let recognizer = SFSpeechRecognizer() else {
