@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F486267E2C2FCAC900E233D3 /* ShortcutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486267D2C2FCAC900E233D3 /* ShortcutsProvider.swift */; };
+		F48626812C2FCB0B00E233D3 /* AssetIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48626802C2FCB0A00E233D3 /* AssetIntents.swift */; };
 		FD38CE1C2C2FBA0A0056344A /* RoadkillApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38CE1B2C2FBA0A0056344A /* RoadkillApp.swift */; };
 		FD38CE1E2C2FBA0A0056344A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38CE1D2C2FBA0A0056344A /* ContentView.swift */; };
 		FD38CE202C2FBA0B0056344A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD38CE1F2C2FBA0B0056344A /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 
 /* Begin PBXFileReference section */
 		F486267B2C2FC8AE00E233D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F486267D2C2FCAC900E233D3 /* ShortcutsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsProvider.swift; sourceTree = "<group>"; };
+		F48626802C2FCB0A00E233D3 /* AssetIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetIntents.swift; sourceTree = "<group>"; };
 		FD38CE182C2FBA0A0056344A /* Roadkill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roadkill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD38CE1B2C2FBA0A0056344A /* RoadkillApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadkillApp.swift; sourceTree = "<group>"; };
 		FD38CE1D2C2FBA0A0056344A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +37,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F486267C2C2FCAA200E233D3 /* AppIntents */ = {
+			isa = PBXGroup;
+			children = (
+				F486267D2C2FCAC900E233D3 /* ShortcutsProvider.swift */,
+				F486267F2C2FCB0200E233D3 /* Asset */,
+			);
+			path = AppIntents;
+			sourceTree = "<group>";
+		};
+		F486267F2C2FCB0200E233D3 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				F48626802C2FCB0A00E233D3 /* AssetIntents.swift */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
 		FD38CE0F2C2FBA0A0056344A = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +73,7 @@
 		FD38CE1A2C2FBA0A0056344A /* Roadkill */ = {
 			isa = PBXGroup;
 			children = (
+				F486267C2C2FCAA200E233D3 /* AppIntents */,
 				F486267B2C2FC8AE00E233D3 /* Info.plist */,
 				FD38CE1B2C2FBA0A0056344A /* RoadkillApp.swift */,
 				FD38CE1D2C2FBA0A0056344A /* ContentView.swift */,
@@ -140,6 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD38CE1E2C2FBA0A0056344A /* ContentView.swift in Sources */,
+				F486267E2C2FCAC900E233D3 /* ShortcutsProvider.swift in Sources */,
+				F48626812C2FCB0B00E233D3 /* AssetIntents.swift in Sources */,
 				FD38CE1C2C2FBA0A0056344A /* RoadkillApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +298,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Roadkill/Preview Content\"";
+				DEVELOPMENT_TEAM = 6ZQXJHH38M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Roadkill/Info.plist;
@@ -305,6 +330,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Roadkill/Preview Content\"";
+				DEVELOPMENT_TEAM = 6ZQXJHH38M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Roadkill/Info.plist;
