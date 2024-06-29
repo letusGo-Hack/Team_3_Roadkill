@@ -9,25 +9,26 @@ import SwiftUI
 import Lottie
 
 struct RecordView: View {
-    @State var isRecording: Bool = false
+    @Environment(AudioRecordManager.self) private var recordManager
+    
     var recordingLottie = LottieView(animation: .named("recording"))
     
     var body: some View {
         VStack(spacing: 12) {
-            if isRecording {
+            if recordManager.isRecording {
                 recordingLottie
                     .playing(loopMode: .loop)
                     .onTapGesture {
-                        isRecording.toggle()
+                        recordManager.isRecording.toggle()
                     }
             } else {
                 recordingLottie
                     .playbackMode(.paused)
                     .onTapGesture {
-                        isRecording.toggle()
+                        recordManager.isRecording.toggle()
                     }
             }
-            Text(isRecording ? "녹음 중입니다..." : "")
+            Text(recordManager.isRecording ? "녹음 중입니다..." : "")
                 .foregroundColor(.black)
         }
         .padding(.bottom, 20)
@@ -35,6 +36,6 @@ struct RecordView: View {
     }
 }
 
-#Preview {
-    RecordView()
-}
+//#Preview {
+//    RecordView()
+//}

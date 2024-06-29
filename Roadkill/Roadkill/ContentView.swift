@@ -15,12 +15,13 @@ struct ContentView: View {
     
     var body: some View {
         @Bindable var navigation = navigation
+        
         TabView(selection: $navigation.selection) {
             Tab("매뉴얼", systemImage: "info.circle", value: .intro) {
                 IntroductionView()
             }
             Tab("녹음하기", systemImage: "waveform.circle.fill", value: .record) {
-                RecordView()
+                RecordView().environment(recordManager)
             }
             Tab("신고 내역", systemImage: "list.bullet", value: .reportList) {
                 ReportListView()
