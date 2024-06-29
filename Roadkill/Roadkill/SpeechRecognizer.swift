@@ -8,7 +8,11 @@
 import Foundation
 import Speech
 
-actor SpeechRecognizer {
+protocol SpeechRecognizerDelegate: AnyObject {
+    func speechRecognizer(_ recognizer: SpeechRecognizer, didFinishTranscript script: String)
+}
+
+final class SpeechRecognizer {
 
     enum RecognizerError: Error {
         case nilRecognizer
@@ -16,6 +20,7 @@ actor SpeechRecognizer {
     }
 
     private let recognizer: SFSpeechRecognizer?
+    weak var delegate: SpeechRecognizerDelegate?
 
     init() throws {
         guard let recognizer = SFSpeechRecognizer() else {
@@ -40,7 +45,7 @@ actor SpeechRecognizer {
         }
     }
 
-    nonisolated private func handleRecognition(result: SFSpeechRecognitionResult?, error: Error?) {
+    private func handleRecognition(result: SFSpeechRecognitionResult?, error: Error?) {
         guard let result else {
             // Recognition failed, so check the error for details and handle it.
             return
@@ -49,7 +54,7 @@ actor SpeechRecognizer {
         // Print the speech transcription with the highest confidence that the
         // system recognized.
         if result.isFinal {
-            print(result.bestTranscription.formattedString)
+            delegate?.speechRecognizer(self, didFinishTranscript: result.bestTranscription.formattedString)
         }
     }
 
