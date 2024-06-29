@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD38CE022C2FA6ED0056344A /* DapjeongneoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38CE012C2FA6ED0056344A /* DapjeongneoApp.swift */; };
-		FD38CE042C2FA6ED0056344A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38CE032C2FA6ED0056344A /* ContentView.swift */; };
-		FD38CE062C2FA6EE0056344A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD38CE052C2FA6EE0056344A /* Assets.xcassets */; };
-		FD38CE092C2FA6EE0056344A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD38CE082C2FA6EE0056344A /* Preview Assets.xcassets */; };
+		FD38CE1C2C2FBA0A0056344A /* RoadkillApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38CE1B2C2FBA0A0056344A /* RoadkillApp.swift */; };
+		FD38CE1E2C2FBA0A0056344A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38CE1D2C2FBA0A0056344A /* ContentView.swift */; };
+		FD38CE202C2FBA0B0056344A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD38CE1F2C2FBA0B0056344A /* Assets.xcassets */; };
+		FD38CE232C2FBA0B0056344A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD38CE222C2FBA0B0056344A /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FD38CDFE2C2FA6ED0056344A /* Dapjeongneo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dapjeongneo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD38CE012C2FA6ED0056344A /* DapjeongneoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DapjeongneoApp.swift; sourceTree = "<group>"; };
-		FD38CE032C2FA6ED0056344A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FD38CE052C2FA6EE0056344A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FD38CE082C2FA6EE0056344A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD38CE182C2FBA0A0056344A /* Roadkill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roadkill.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD38CE1B2C2FBA0A0056344A /* RoadkillApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadkillApp.swift; sourceTree = "<group>"; };
+		FD38CE1D2C2FBA0A0056344A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD38CE1F2C2FBA0B0056344A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD38CE222C2FBA0B0056344A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FD38CDFB2C2FA6ED0056344A /* Frameworks */ = {
+		FD38CE152C2FBA0A0056344A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,37 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FD38CDF52C2FA6ED0056344A = {
+		FD38CE0F2C2FBA0A0056344A = {
 			isa = PBXGroup;
 			children = (
-				FD38CE002C2FA6ED0056344A /* Dapjeongneo */,
-				FD38CDFF2C2FA6ED0056344A /* Products */,
+				FD38CE1A2C2FBA0A0056344A /* Roadkill */,
+				FD38CE192C2FBA0A0056344A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FD38CDFF2C2FA6ED0056344A /* Products */ = {
+		FD38CE192C2FBA0A0056344A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FD38CDFE2C2FA6ED0056344A /* Dapjeongneo.app */,
+				FD38CE182C2FBA0A0056344A /* Roadkill.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FD38CE002C2FA6ED0056344A /* Dapjeongneo */ = {
+		FD38CE1A2C2FBA0A0056344A /* Roadkill */ = {
 			isa = PBXGroup;
 			children = (
-				FD38CE012C2FA6ED0056344A /* DapjeongneoApp.swift */,
-				FD38CE032C2FA6ED0056344A /* ContentView.swift */,
-				FD38CE052C2FA6EE0056344A /* Assets.xcassets */,
-				FD38CE072C2FA6EE0056344A /* Preview Content */,
+				FD38CE1B2C2FBA0A0056344A /* RoadkillApp.swift */,
+				FD38CE1D2C2FBA0A0056344A /* ContentView.swift */,
+				FD38CE1F2C2FBA0B0056344A /* Assets.xcassets */,
+				FD38CE212C2FBA0B0056344A /* Preview Content */,
 			);
-			path = Dapjeongneo;
+			path = Roadkill;
 			sourceTree = "<group>";
 		};
-		FD38CE072C2FA6EE0056344A /* Preview Content */ = {
+		FD38CE212C2FBA0B0056344A /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				FD38CE082C2FA6EE0056344A /* Preview Assets.xcassets */,
+				FD38CE222C2FBA0B0056344A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -70,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FD38CDFD2C2FA6ED0056344A /* Dapjeongneo */ = {
+		FD38CE172C2FBA0A0056344A /* Roadkill */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FD38CE0C2C2FA6EE0056344A /* Build configuration list for PBXNativeTarget "Dapjeongneo" */;
+			buildConfigurationList = FD38CE262C2FBA0B0056344A /* Build configuration list for PBXNativeTarget "Roadkill" */;
 			buildPhases = (
-				FD38CDFA2C2FA6ED0056344A /* Sources */,
-				FD38CDFB2C2FA6ED0056344A /* Frameworks */,
-				FD38CDFC2C2FA6ED0056344A /* Resources */,
+				FD38CE142C2FBA0A0056344A /* Sources */,
+				FD38CE152C2FBA0A0056344A /* Frameworks */,
+				FD38CE162C2FBA0A0056344A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Dapjeongneo;
-			productName = Dapjeongneo;
-			productReference = FD38CDFE2C2FA6ED0056344A /* Dapjeongneo.app */;
+			name = Roadkill;
+			productName = Roadkill;
+			productReference = FD38CE182C2FBA0A0056344A /* Roadkill.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FD38CDF62C2FA6ED0056344A /* Project object */ = {
+		FD38CE102C2FBA0A0056344A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					FD38CDFD2C2FA6ED0056344A = {
+					FD38CE172C2FBA0A0056344A = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
-			buildConfigurationList = FD38CDF92C2FA6ED0056344A /* Build configuration list for PBXProject "Dapjeongneo" */;
+			buildConfigurationList = FD38CE132C2FBA0A0056344A /* Build configuration list for PBXProject "Roadkill" */;
 			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,42 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = FD38CDF52C2FA6ED0056344A;
-			productRefGroup = FD38CDFF2C2FA6ED0056344A /* Products */;
+			mainGroup = FD38CE0F2C2FBA0A0056344A;
+			productRefGroup = FD38CE192C2FBA0A0056344A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FD38CDFD2C2FA6ED0056344A /* Dapjeongneo */,
+				FD38CE172C2FBA0A0056344A /* Roadkill */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FD38CDFC2C2FA6ED0056344A /* Resources */ = {
+		FD38CE162C2FBA0A0056344A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD38CE092C2FA6EE0056344A /* Preview Assets.xcassets in Resources */,
-				FD38CE062C2FA6EE0056344A /* Assets.xcassets in Resources */,
+				FD38CE232C2FBA0B0056344A /* Preview Assets.xcassets in Resources */,
+				FD38CE202C2FBA0B0056344A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FD38CDFA2C2FA6ED0056344A /* Sources */ = {
+		FD38CE142C2FBA0A0056344A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD38CE042C2FA6ED0056344A /* ContentView.swift in Sources */,
-				FD38CE022C2FA6ED0056344A /* DapjeongneoApp.swift in Sources */,
+				FD38CE1E2C2FBA0A0056344A /* ContentView.swift in Sources */,
+				FD38CE1C2C2FBA0A0056344A /* RoadkillApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		FD38CE0A2C2FA6EE0056344A /* Debug */ = {
+		FD38CE242C2FBA0B0056344A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -208,7 +208,7 @@
 			};
 			name = Debug;
 		};
-		FD38CE0B2C2FA6EE0056344A /* Release */ = {
+		FD38CE252C2FBA0B0056344A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -264,14 +264,14 @@
 			};
 			name = Release;
 		};
-		FD38CE0D2C2FA6EE0056344A /* Debug */ = {
+		FD38CE272C2FBA0B0056344A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Dapjeongneo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Roadkill/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -284,26 +284,22 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = team3.letushack.Dapjeongneo;
+				PRODUCT_BUNDLE_IDENTIFIER = team3.letushack.Roadkill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		FD38CE0E2C2FA6EE0056344A /* Release */ = {
+		FD38CE282C2FBA0B0056344A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Dapjeongneo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Roadkill/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -316,12 +312,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = team3.letushack.Dapjeongneo;
+				PRODUCT_BUNDLE_IDENTIFIER = team3.letushack.Roadkill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,25 +323,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FD38CDF92C2FA6ED0056344A /* Build configuration list for PBXProject "Dapjeongneo" */ = {
+		FD38CE132C2FBA0A0056344A /* Build configuration list for PBXProject "Roadkill" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD38CE0A2C2FA6EE0056344A /* Debug */,
-				FD38CE0B2C2FA6EE0056344A /* Release */,
+				FD38CE242C2FBA0B0056344A /* Debug */,
+				FD38CE252C2FBA0B0056344A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FD38CE0C2C2FA6EE0056344A /* Build configuration list for PBXNativeTarget "Dapjeongneo" */ = {
+		FD38CE262C2FBA0B0056344A /* Build configuration list for PBXNativeTarget "Roadkill" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD38CE0D2C2FA6EE0056344A /* Debug */,
-				FD38CE0E2C2FA6EE0056344A /* Release */,
+				FD38CE272C2FBA0B0056344A /* Debug */,
+				FD38CE282C2FBA0B0056344A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FD38CDF62C2FA6ED0056344A /* Project object */;
+	rootObject = FD38CE102C2FBA0A0056344A /* Project object */;
 }
