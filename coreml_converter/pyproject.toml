@@ -3,8 +3,8 @@ name = "coreml_converter"
 version = "0.1.0"
 description = "Add a short description here"
 authors = [{name = "Junnos ", email = "junnos.dev@gmail.com"}]
-requires-python = ">= 3.11"
-dependencies = ["coremltools==8.0b1", "torch==2.3.0"]
+requires-python = ">= 3.10, < 3.11"
+dependencies = ["coremltools", "torch==2.3.0", "transformers", "setuptools"]
 
 [build-system]
 requires = ["setuptools"]
