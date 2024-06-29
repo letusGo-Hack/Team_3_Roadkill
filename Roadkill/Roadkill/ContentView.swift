@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.modelContext) private var modelContext
+    
     @Environment(NavigationManager.self) private var navigation
     
     @Environment(LocationManager.self) private var locationManager
     @Environment(AudioRecordManager.self) private var recordManager
-    @Environment(\.modelContext) var modelContext
     
     var body: some View {
         @Bindable var navigation = navigation

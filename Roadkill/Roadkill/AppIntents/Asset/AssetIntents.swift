@@ -17,10 +17,10 @@ struct StartRecordIntent: AudioRecordingIntent {
     
     @Dependency
     var recordManager: AudioRecordManager
-    
+                                       
     @Dependency
     var locationManager: LocationManager
-    
+                                                                          
     @MainActor
     func perform() async throws -> some IntentResult {
         navigation.startRecord()

@@ -7,14 +7,14 @@
 
 import SwiftUI
 import SwiftData
+import CoreLocation
 
 struct ReportListView: View {
-    @State private var reports: [Report] = [
-            Report(date: "2024-06-29", location: "서울", text: "음성 녹음 내용", summary: "요약", isReported: true),
-            Report(date: "2024-06-28", location: "경기", text: "음성 녹음 내용", summary: "요약", isReported: true),
-            Report(date: "2024-06-27", location: "부산", text: "음성 녹음 내용", summary: "요약", isReported: false)
-        ]
+    @Environment(\.modelContext) private var modelContext
     
+    @Query(sort: \Report.date, order: .reverse)
+    private var reports: [Report]
+        
     @ViewBuilder
     var body: some View {
         Text("신고 내역")
@@ -26,11 +26,16 @@ struct ReportListView: View {
                     Text("\(report.date)")
                         .font(.headline)
                     Spacer()
-                    Image(systemName: report.isReported ? "checkmark.square.fill" :"checkmark.square")
-                        .foregroundColor(.blue)
+                    Button {
+                        report.isReported.toggle()
+                    } label: {
+                        Image(systemName: report.isReported ? "checkmark.square.fill" :"checkmark.square")
+                            .foregroundColor(.blue)
+                    }
                 }
                 
-                Text("장소: \(report.location)")
+                let location = CLLocation(latitude: report.x, longitude: report.y)
+                Text("장소: \(location)")
                     .font(.body)
                 Text("내용: \(report.text)")
                     .font(.body)

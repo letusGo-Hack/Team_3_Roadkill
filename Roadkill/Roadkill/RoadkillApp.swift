@@ -9,6 +9,10 @@ import AppIntents
 import SwiftUI
 import SwiftData
 
+let persistents: [any PersistentModel.Type] = [
+    Report.self
+]
+
 @main
 struct RoadkillApp: App {
     let navigationManager: NavigationManager
@@ -17,11 +21,11 @@ struct RoadkillApp: App {
     let recordManager: AudioRecordManager
     
     var modelContainer: ModelContainer = {
-        let schema = Schema([Report.self])
-        let modelConfiguration = ModelConfiguration(schema: schema)
-        
+        let schema = Schema(persistents)
+        let configuration = ModelConfiguration(isStoredInMemoryOnly: false)
+
         do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
+            return try ModelContainer(for: schema, configurations: [configuration])
         } catch {
             fatalError("Could not create ModelContainer: \(error)")
         }
@@ -56,5 +60,6 @@ struct RoadkillApp: App {
         .environment(navigationManager)
         .environment(recordManager)
         .environment(locationManager)
+        .modelContainer(modelContainer)
     }
 }
