@@ -8,6 +8,7 @@
 import Foundation
 import Speech
 
+@Observable
 final class SpeechRecognizer {
 
     enum RecognizerError: Error {
@@ -25,6 +26,9 @@ final class SpeechRecognizer {
         self.recognizer = recognizer
     }
 
+    /// ```swift
+    /// recognizeFile(url: recordManager.audioFilePath)
+    /// ```
     func recognizeFile(url: URL) async throws -> String {
         guard let recognizer = SFSpeechRecognizer() else {
             throw RecognizerError.nilRecognizer

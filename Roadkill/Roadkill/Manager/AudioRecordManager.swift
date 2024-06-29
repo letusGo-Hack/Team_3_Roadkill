@@ -9,15 +9,21 @@ import AVFoundation
 
 @Observable
 final class AudioRecordManager {
+    static let audioFileName = "recording.m4a"
+
     var audioRecorder: AVAudioRecorder?
     var audioPlayer: AVAudioPlayer?
     
     var isRecording: Bool = false
     var isPlaying: Bool = false
 
-    var documentsDirectory: URL {
+    private var documentsDirectory: URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return paths[0]
+    }
+
+    var audioFilePath: URL {
+        return documentsDirectory.appending(path: Self.audioFileName, directoryHint: .notDirectory)
     }
 
     func setupAudioSession() async {
@@ -38,7 +44,7 @@ final class AudioRecordManager {
     }
     
     func startRecording() {
-        let audioFilename = documentsDirectory.appendingPathComponent("recording.m4a")
+        let audioFilename = audioFilePath
         let settings = [
             AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
             AVSampleRateKey: 12000,
@@ -69,7 +75,7 @@ final class AudioRecordManager {
 
 extension AudioRecordManager {
     func playRecording() {
-        let audioFilename = documentsDirectory.appendingPathComponent("recording.m4a")
+        let audioFilename = audioFilePath
         do {
             isPlaying = true
             
