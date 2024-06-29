@@ -358,6 +358,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Roadkill/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "로드킬 신고";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치 접근을 허용해주세요.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "마이크 접근을 허용해주세요.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -394,6 +395,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Roadkill/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "로드킬 신고";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치 접근을 허용해주세요.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "마이크 접근을 허용해주세요.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
